@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    color: white;
+    text-shadow: yellow;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;  
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list a{
+    color: white;
+    text-decoration: white;
+}
+.nav-list li a:hover{
+color: gray;
+}
+.rightNav{
+   width: 50%;
+   text-align: right;
+   padding: 7px;
+}#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(./img/electronics-projects.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{  
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondhalf{
+    width: 30%;
+}
+.secondhalf img{
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin:auto;
+}
+.text-big{
+font-size: 40px;
+}
+.text-small{
+font-size: 18px;
+}
+.btn{
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: 0px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 7px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: none;
+    color: white;
+}
+.btn-sm a{
+    color: white;
+    text-decoration: none;
+}
+.thumbnail-image{
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 35px;
+}
+.aboutus{
+    padding: 30px 10px 5px 5px;
+    font-size: 30px;
+    font-family: 'Ubuntu';
+}
+.aboutus h2{
+    text-align: center;
+    align-items: center;
+}
+.Section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding: 35px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Section-left{
+    flex-direction: row-reverse;
+}
+
+.section-tag{
+    display: flex;
+}
+.contactus-main{
+    text-align: center;
+}
+.form{
+    max-width: 500px;
+    margin: auto;
+
+}
+.form-input{
+    text-align: center;
+    padding: 7px 80px;
+    margin: 9px;
+    border: 2px solid;
+    border-radius: 9px;
+    flex-direction: column;
+}
+.button-dark{
+    padding: 7px 30px;
+    border: 2px solid;
+    border-radius: 18px;
+    text-align: center;
+    align-items: center;
+
+}
+.footer-main{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+
+}
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 500px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .Section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+}
