@@ -76,7 +76,7 @@ color: gray;
     display: block;
     margin:auto;
 }
-.text-big{
+.paras .text-big{
 font-size: 40px;
 }
 .text-small{
@@ -162,7 +162,50 @@ font-size: 18px;
     align-items: center;
     text-align: center;
     padding: 15px;
+    background: #222;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    display: flex;
+}
+.footer-main h1{
+    font-size: 30px;
+}
+.contact-logo{
+    display: flex;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+.contact-logo img{
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.aboutus h2{
+    font-family: ubuntu;
+    font-size: 28px;
+}
+.aboutus p{
+    font-family: ubuntu;
+    font-size: 20px;
+}
+.container{
+    background: #0d0d0d;
+    padding: 9px;
+    text-align: center;
+    align-items: center;
+}
+.container h2{
+    color: white;
+}
+.heading-nav{
+    display: none;
+    position: absolute;
+    top: 18px;
+    color: white;
+    left: 5%;
 }
 .burger{
     display: none;
@@ -187,6 +230,10 @@ top: 15px;
         transition: all 0.7s ease-out;
         height: 500px;
     }
+    .heading-nav{
+        display: block;
+
+    }
     .rightNav{
         text-align: center;
     }
@@ -207,6 +254,18 @@ top: 15px;
         flex-direction: column-reverse;
         max-width: 100%;
     }
+    .footer-main{
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 13px;
+        display: block;
+    }
+    .aboutus h2{
+        font-family: ubuntu;
+        font-size: 28px;
+    }
     .Section{
         flex-direction: column-reverse;
     }
@@ -215,5 +274,19 @@ top: 15px;
     }
     .text-big{
         text-align: center;
+    }
+    .contact-logo{
+        display: flex;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 10px;
+    }
+    .contact-logo img{
+        width: 70%;
+    }
+    .container{
+        font-family: ubuntu;
+        font-size: 9px;
     }
 }
